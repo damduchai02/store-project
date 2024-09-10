@@ -4,7 +4,7 @@ import { useToast } from '@/hooks/use-toast';
 import { SignOutButton } from '@clerk/nextjs';
 import Link from 'next/link';
 
-function SignoutLink() {
+function SignOutLink() {
   const { toast } = useToast();
   const handleLogout = () => {
     toast({ description: 'You have been signed out.' });
@@ -18,4 +18,4 @@ function SignoutLink() {
   );
 }
 
-export default SignoutLink;
+export default SignOutLink;

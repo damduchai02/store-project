@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { LuShoppingCart } from "react-icons/lu";
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { LuShoppingCart } from 'react-icons/lu';
 
 async function CartButton() {
   // temp
@@ -8,13 +8,13 @@ async function CartButton() {
   return (
     <Button
       asChild
-      size="icon"
-      variant="outline"
-      className="relative flex items-center justify-center"
+      size='icon'
+      variant='outline'
+      className='relative flex items-center justify-center'
     >
-      <Link href="/cart">
+      <Link href='/cart'>
         <LuShoppingCart />
-        <span className="absolute -right-3 -top-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-white">
+        <span className='absolute -right-3 -top-3 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-xs text-white'>
           {numItemsInCart}
         </span>
       </Link>
